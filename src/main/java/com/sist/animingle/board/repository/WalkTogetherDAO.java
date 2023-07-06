@@ -18,7 +18,6 @@ public class WalkTogetherDAO {
 	
 	public WalkTogetherDAO() {
 		conn = DBUtil.open("43.202.26.240", "admin", "java1234");
-		//conn = DBUtil.open("localhost", "admin", "java1234");
 	}
 
 	public boolean checkWriting(String seq) {
