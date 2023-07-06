@@ -7,7 +7,6 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import com.test.my.DBUtil;
 
@@ -19,7 +18,7 @@ public class WagleDAO {
 	private ResultSet rs;
 
 	public WagleDAO() {
-		this.conn = DBUtil.open("3.38.234.229", "admin", "java1234");
+		this.conn = DBUtil.open("43.202.26.240", "admin", "java1234");
 	}
 
 	public List<WagleDTO> list(HashMap<String, String> map) {
@@ -34,8 +33,8 @@ public class WagleDAO {
 			String itemsPerPage = map.get("itemsPerPage");
 			
 			
-			 if (map.get("search").equals("y")) { 
-				 where = String.format("where wg_subject like '%%%s%%'" , map.get("searchtext")); 
+			 if (map.get("search").equals("y")) {
+				 where = String.format("where wg_subject like '%%%s%%'" , map.get("searchtext"));
 				 }
 			 
 			
@@ -187,7 +186,7 @@ public class WagleDAO {
 			 String sql =
 			 "select count(*) as ccnt from tblwagleComment c inner join tblwagle w on c.wg_seq = w.wg_seq where w.wg_seq = ?";
 			  
-			 pstat = conn.prepareStatement(sql); 
+			 pstat = conn.prepareStatement(sql);
 			 pstat.setString(1, seq);
 			 rs = pstat.executeQuery();
 			  
@@ -195,8 +194,8 @@ public class WagleDAO {
 			  
 			 return rs.getString("ccnt"); }
 			  
-			 } catch (Exception e) { 
-				 e.printStackTrace(); 
+			 } catch (Exception e) {
+				 e.printStackTrace();
 			 }
 			 
 		
@@ -253,7 +252,7 @@ public class WagleDAO {
 
 			pstat.setString(1, cdto.getWg_seq().toString());
 			pstat.setString(2, cdto.getWgc_writer());
-			pstat.setString(3, cdto.getWgc_content());			
+			pstat.setString(3, cdto.getWgc_content());
 
 			return pstat.executeUpdate();
 
@@ -305,8 +304,8 @@ public class WagleDAO {
 			}
 			*/
 			
-			 if (map.get("search").equals("y")) { 
-				 where = String.format("and wg_subject like '%%%s%%'" , map.get("searchtext")); 
+			 if (map.get("search").equals("y")) {
+				 where = String.format("and wg_subject like '%%%s%%'" , map.get("searchtext"));
 				 }
 			 
 			

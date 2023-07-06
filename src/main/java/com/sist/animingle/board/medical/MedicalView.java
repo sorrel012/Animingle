@@ -25,7 +25,7 @@ public class MedicalView extends HttpServlet {
 		
 		if (MedicalDAO.mapconn == null) {
 			
-			MedicalDAO.mapconn = DBUtil.open("3.38.234.229", "admin", "java1234");
+			MedicalDAO.mapconn = DBUtil.open("43.202.26.240", "admin", "java1234");
 	
 		}
 		
@@ -38,6 +38,7 @@ public class MedicalView extends HttpServlet {
 	
 	}
 	
+	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
 		

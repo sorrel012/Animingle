@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html>
@@ -42,7 +41,7 @@
 	                    <textarea style="display:none;" name="content" id="editor1"></textarea>
 	                </div>
 		            <div class="waglesubmit">
-			            <button type="button" onclick="location.href='http://localhost:8090/animingle/board/waglelist.do'">취 소</button>
+			            <button type="button" onclick="location.href='http://43.202.26.240:8080/animingle/board/waglelist.do'">취 소</button>
 			            <button type="submit">등 록</button>
 		            </div>
 	            </form>

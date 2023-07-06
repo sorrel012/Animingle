@@ -138,7 +138,7 @@
 <script>
 		
 		var textarea = document.getElementById("messageWindow");
-		var webSocket = new WebSocket('ws://192.168.0.50:8090/animingle/petsitterview.do');
+		var webSocket = new WebSocket('ws://43.202.26.240:8080/animingle/petsitterview.do');
 		var inputMessage = document.getElementById('inputMessage');
 		
 		webSocket.onerror = function(event) {

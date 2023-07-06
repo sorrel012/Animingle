@@ -18,7 +18,7 @@ public class CommunityListDAO {
 	private ResultSet rs;
 
 	public CommunityListDAO() {
-		this.conn = DBUtil.open("3.38.234.229", "admin", "java1234");
+		this.conn = DBUtil.open("43.202.26.240", "admin", "java1234");
 	}
 
 	public List<VetQnAListDTO> comqnalist() {

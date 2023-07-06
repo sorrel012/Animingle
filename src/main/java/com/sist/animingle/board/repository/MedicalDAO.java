@@ -20,7 +20,7 @@ public class MedicalDAO {
 	public static Connection mapconn;
 	
 	/*
-	 * public MedicalDAO() { this.conn = DBUtil.open("3.38.234.229", "admin",
+	 * public MedicalDAO() { this.conn = DBUtil.open("43.202.26.240", "admin",
 	 * "java1234"); }
 	 */
 	
@@ -169,7 +169,7 @@ public class MedicalDAO {
 		try {
 			if (MedicalDAO.mapconn == null || MedicalDAO.mapconn.isClosed()) {
 				
-				MedicalDAO.mapconn = DBUtil.open("3.38.234.229", "admin", "java1234");
+				MedicalDAO.mapconn = DBUtil.open("43.202.26.240", "admin", "java1234");
 
 			}
 		} catch (SQLException e) {
@@ -274,7 +274,7 @@ public class MedicalDAO {
 		try {
 			if (MedicalDAO.mapconn == null || MedicalDAO.mapconn.isClosed()) {
 				
-				MedicalDAO.mapconn = DBUtil.open("3.38.234.229", "admin", "java1234");
+				MedicalDAO.mapconn = DBUtil.open("43.202.26.240", "admin", "java1234");
 
 			}
 		} catch (SQLException e) {

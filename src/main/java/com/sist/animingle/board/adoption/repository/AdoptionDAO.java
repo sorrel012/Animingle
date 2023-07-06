@@ -26,7 +26,7 @@ public class AdoptionDAO {
 	private static ResultSet rs;
 	
 	public AdoptionDAO() {
-		this.conn = DBUtil.open("3.38.234.229", "admin", "java1234");
+		this.conn = DBUtil.open("43.202.26.240", "admin", "java1234");
 	}
 
 	public static List<AdoptionDTO> apiContent(int nowPage) {
@@ -77,9 +77,9 @@ public class AdoptionDAO {
 			
 			List<AdoptionDTO> list = new ArrayList<AdoptionDTO>();
 			
-			if (dataArr.size() > 0) { 
+			if (dataArr.size() > 0) {
 				
-				for(int i=0; i<dataArr.size(); i++) { 
+				for(int i=0; i<dataArr.size(); i++) {
 					JSONObject jsonObj = (JSONObject)dataArr.get(i);
 		
 					AdoptionDTO dto = new AdoptionDTO();
@@ -97,7 +97,7 @@ public class AdoptionDAO {
 					dto.setImgurl(apiImg(jsonObj.get("ANIMAL_NO").toString()));
 					
 					list.add(dto);
-				} 
+				}
 				
 				return list;
 			}
@@ -181,9 +181,9 @@ public class AdoptionDAO {
 			JSONArray dataArr = (JSONArray)jsonMain.get("row");
 			
 			//System.out.println(animalNo.equals("2924.0"));
-			if (dataArr.size() > 0) { 
+			if (dataArr.size() > 0) {
 				
-				for(int i=0; i<dataArr.size(); i++) { 
+				for(int i=0; i<dataArr.size(); i++) {
 					
 					JSONObject jsonObj = (JSONObject)dataArr.get(i);
 					
@@ -192,7 +192,7 @@ public class AdoptionDAO {
 						return jsonObj.get("PHOTO_URL").toString();
 					}
 					
-				} 
+				}
 				
 
 			}
@@ -253,9 +253,9 @@ public class AdoptionDAO {
 			
 			AdoptionDTO dto = new AdoptionDTO();
 			
-			if (dataArr.size() > 0) { 
+			if (dataArr.size() > 0) {
 				
-				for(int i=0; i<dataArr.size(); i++) { 
+				for(int i=0; i<dataArr.size(); i++) {
 					JSONObject jsonObj = (JSONObject)dataArr.get(i);
 		
 					if (num.equals(jsonObj.get("ANIMAL_NO").toString())) {
@@ -279,7 +279,7 @@ public class AdoptionDAO {
 						
 					}
 
-				} 
+				}
 				
 			}
 			

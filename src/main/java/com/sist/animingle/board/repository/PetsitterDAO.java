@@ -17,7 +17,7 @@ public class PetsitterDAO {
 	private ResultSet rs;
 	
 	public PetsitterDAO() {
-		String server = "3.38.234.229";
+		String server = "43.202.26.240";
 		String id = "admin";
 		String pw = "java1234";
 		
@@ -394,7 +394,7 @@ public class PetsitterDAO {
 			pstat.close();
 			conn.close();
 			
-			return result;			
+			return result;
 			
 		} catch (Exception e) {
 			e.printStackTrace();

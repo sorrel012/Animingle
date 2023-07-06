@@ -17,7 +17,7 @@ public class WalkTogetherDAO {
 	private ResultSet rs;
 	
 	public WalkTogetherDAO() {
-		conn = DBUtil.open("3.38.234.229", "admin", "java1234");
+		conn = DBUtil.open("43.202.26.240", "admin", "java1234");
 		//conn = DBUtil.open("localhost", "admin", "java1234");
 	}
 

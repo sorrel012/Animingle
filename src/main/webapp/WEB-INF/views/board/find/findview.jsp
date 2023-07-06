@@ -39,7 +39,7 @@
 			</div>
 			<div class="maincontent">
 				<div class="a-div">
-					<a href="http://localhost:8090/animingle/board/findlist.do?page=1&prefix=${prefix}&word=${word}" class="a-back">
+					<a href="http://43.202.26.240:8080/animingle/board/findlist.do?page=1&prefix=${prefix}&word=${word}" class="a-back">
 						<span id="arrow" class="material-symbols-outlined">arrow_back</span>
 						<span class="back-to-list">목록으로 돌아가기</span>
 					</a>

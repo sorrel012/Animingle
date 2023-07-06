@@ -52,7 +52,7 @@
                 </table>
                 
                 <div class="btn-div">
-	         	<button type="button" id="write-btn" class="write-btn" onclick="window.location='http://localhost:8090/animingle/board/adoptionlist.do';">
+	         	<button type="button" id="write-btn" class="write-btn" onclick="window.location='http://43.202.26.240:8080/animingle/board/adoptionlist.do';">
 		         	<span class="material-symbols-outlined">
 						reorder
 					</span>

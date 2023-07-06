@@ -31,7 +31,7 @@
 
 			<c:if test="${id != null}">
             <div class="btn-div">
-                <button type="button" class="write-btn" onclick="window.location='http://localhost:8090/animingle/board/walktogetheradd.do';">
+                <button type="button" class="write-btn" onclick="window.location='http://43.202.26.240:8080/animingle/board/walktogetheradd.do';">
                     <span class="material-symbols-outlined">
                         edit_note
                     </span>
@@ -124,7 +124,7 @@
     var map;
     
 	var textarea = document.getElementById("messageWindow");
-	var webSocket = new WebSocket('ws://localhost:8090/animingle/walktogetherlist.do');
+	var webSocket = new WebSocket('ws://43.202.26.240:8080/animingle/walktogetherlist.do');
 	var inputMessage = document.getElementById('inputMessage');
 	
 	webSocket.onerror = function(event) {

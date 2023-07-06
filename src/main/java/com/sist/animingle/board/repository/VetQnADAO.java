@@ -17,7 +17,7 @@ public class VetQnADAO {
 	private ResultSet rs;
 	
 	public VetQnADAO() {
-		String server = "3.38.234.229";
+		String server = "43.202.26.240";
 		String id = "admin";
 		String pw = "java1234";
 		
@@ -116,7 +116,7 @@ public class VetQnADAO {
 				dto.setVqr_cnt(rs.getString("vqr_cnt"));
 				dto.setVq_prefix(rs.getString("vq_prefix"));
 				
-				return dto;			
+				return dto;
 			}
 			
 			rs.close();
@@ -361,7 +361,7 @@ public class VetQnADAO {
 				
 			}
 			
-			return dto; 
+			return dto;
 			
 		} catch (Exception e) {
 			e.printStackTrace();

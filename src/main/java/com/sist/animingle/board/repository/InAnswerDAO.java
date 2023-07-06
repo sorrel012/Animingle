@@ -1,7 +1,6 @@
 package com.sist.animingle.board.repository;
 
 import java.sql.Connection;
-
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
@@ -18,7 +17,7 @@ public class InAnswerDAO {
 	private ResultSet rs;
 
 	public InAnswerDAO() {
-		this.conn = DBUtil.open("3.38.234.229", "admin", "java1234");
+		this.conn = DBUtil.open("43.202.26.240", "admin", "java1234");
 	}
 
 	//문의글 번호에 해당하는 답변 가져오기

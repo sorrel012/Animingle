@@ -99,7 +99,7 @@
                   </div>
 
                   <div class="move-to-login">
-                      Already have an account? <a href="http://localhost:8090/animingle/user/login.do" id="logIn">Log in</a>
+                      Already have an account? <a href="http://43.202.26.240:8080/animingle/user/login.do" id="logIn">Log in</a>
                   </div>
               </fieldset>
           </form>

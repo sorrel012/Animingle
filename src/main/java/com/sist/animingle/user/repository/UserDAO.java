@@ -18,7 +18,7 @@ public class UserDAO {
    private ResultSet rs;
    
    public UserDAO() {
-      this.conn = DBUtil.open("3.38.234.229", "admin", "java1234");
+      this.conn = DBUtil.open("43.202.26.240", "admin", "java1234");
    }
    
    //로그인 - 1)일반 회원 로그인
@@ -340,7 +340,7 @@ public class UserDAO {
       
       try {
          
-         this.conn = DBUtil.open("3.38.234.229", "admin", "java1234");
+         this.conn = DBUtil.open("43.202.26.240", "admin", "java1234");
 
          String sql = "select * from tblUser where user_id = ?";
 
@@ -383,7 +383,7 @@ public class UserDAO {
       
       try {
          
-         this.conn = DBUtil.open("3.38.234.229", "admin", "java1234");
+         this.conn = DBUtil.open("43.202.26.240", "admin", "java1234");
 
          String sql = "update tblUser set user_pic = ? where user_id = ?";
 
@@ -410,7 +410,7 @@ public class UserDAO {
       
       try {
          
-         this.conn = DBUtil.open("3.38.234.229", "admin", "java1234");
+         this.conn = DBUtil.open("43.202.26.240", "admin", "java1234");
 
          String sql = "select v.*, u.user_name as vet_name, u.user_pic as vet_pic from tblVeterinarian v\r\n"
                + "    inner join tblUser u\r\n"
@@ -453,7 +453,7 @@ public class UserDAO {
       
       try {
          
-         this.conn = DBUtil.open("3.38.234.229", "admin", "java1234");
+         this.conn = DBUtil.open("43.202.26.240", "admin", "java1234");
 
          String sql = "select vc_content from tblVetCareer where vet_seq = ? order by vc_seq asc";
 
@@ -490,7 +490,7 @@ public class UserDAO {
       
       try {
          
-         this.conn = DBUtil.open("3.38.234.229", "admin", "java1234");
+         this.conn = DBUtil.open("43.202.26.240", "admin", "java1234");
 
          String sql = "update tblPetsitter set ps_pic = ? where ps_id = ?";
 
@@ -517,7 +517,7 @@ public class UserDAO {
       
       try {
          
-         this.conn = DBUtil.open("3.38.234.229", "admin", "java1234");
+         this.conn = DBUtil.open("43.202.26.240", "admin", "java1234");
 
          String sql = "select ps_id, ps_pic, ps_intro, to_char(ps_authdate, 'yyyy-mm-dd') as ps_authdate, ps_idcard, ps_crime,(select user_name from tblUser where user_id = p.ps_id ) as ps_name from tblPetsitter p where ps_id = ?";
 
@@ -557,7 +557,7 @@ public class UserDAO {
       
       try {
          
-         this.conn = DBUtil.open("3.38.234.229", "admin", "java1234");
+         this.conn = DBUtil.open("43.202.26.240", "admin", "java1234");
 
          String sql = "select round(nvl(avg(psl.pslog_rate), 0), 1) as ps_rate from tblPetsitter ps\r\n"
                + "    inner join tblPSApply psa\r\n"
@@ -594,7 +594,7 @@ public class UserDAO {
       
       try {
          
-         this.conn = DBUtil.open("3.38.234.229", "admin", "java1234");
+         this.conn = DBUtil.open("43.202.26.240", "admin", "java1234");
 
          String sql = "select count(*) as ps_matchcount from tblPetsitter ps\r\n"
                + "    inner join tblPSApply psa\r\n"
@@ -632,7 +632,7 @@ public class UserDAO {
       
       try {
          
-         this.conn = DBUtil.open("3.38.234.229", "admin", "java1234");
+         this.conn = DBUtil.open("43.202.26.240", "admin", "java1234");
 
          String sql = "select psr.psr_seq as psr_seq,\r\n"
                + "psr.psr_subject as psr_subject,\r\n"
@@ -689,7 +689,7 @@ public class UserDAO {
       
       try {
          
-         this.conn = DBUtil.open("3.38.234.229", "admin", "java1234");
+         this.conn = DBUtil.open("43.202.26.240", "admin", "java1234");
 
          String sql = "select vq.vq_seq as vq_seq,\r\n"
                + "(select vq_subject from tblVetQnA where vq_seq = vq.vq_seq) as vq_subject,\r\n"
@@ -742,7 +742,7 @@ public class UserDAO {
       
       try {
          
-         this.conn = DBUtil.open("3.38.234.229", "admin", "java1234");
+         this.conn = DBUtil.open("43.202.26.240", "admin", "java1234");
 
          String sql = "update tblPetsitter set ps_intro = ? where ps_id = ?";
 
@@ -769,7 +769,7 @@ public class UserDAO {
       
       try {
          
-         this.conn = DBUtil.open("3.38.234.229", "admin", "java1234");
+         this.conn = DBUtil.open("43.202.26.240", "admin", "java1234");
 
          String sql = "update tblUser set user_nickname = ? , user_address = ? , user_addressdetail = ? , user_tel = ? where user_id = ?";
 
@@ -799,7 +799,7 @@ public class UserDAO {
       
       try {
          
-         this.conn = DBUtil.open("3.38.234.229", "admin", "java1234");
+         this.conn = DBUtil.open("43.202.26.240", "admin", "java1234");
 
          String sql = "update tblUser set user_pw = ? where user_id = ?";
 
@@ -826,7 +826,7 @@ public class UserDAO {
       
       try {
          
-         this.conn = DBUtil.open("3.38.234.229", "admin", "java1234");
+         this.conn = DBUtil.open("43.202.26.240", "admin", "java1234");
          
          String sql = "select\r\n"
                + "(select count(psr_seq) as cnt from tblpsrecruitment where psr_writer = ?) +\r\n"
@@ -872,7 +872,7 @@ public class UserDAO {
       
       try {
          
-         this.conn = DBUtil.open("3.38.234.229", "admin", "java1234");
+         this.conn = DBUtil.open("43.202.26.240", "admin", "java1234");
          
          String sql = "select\r\n"
                + "(select count(ffc_seq) as cnt from tblFFComment where ffc_writer = ?) +\r\n"
@@ -913,7 +913,7 @@ public class UserDAO {
       
       try {
          
-         this.conn = DBUtil.open("3.38.234.229", "admin", "java1234");
+         this.conn = DBUtil.open("43.202.26.240", "admin", "java1234");
 
          String sql = "update tblVeterinarian set vet_clinic = ?, vet_address = ?, vet_addressdetail = ?, vet_major = ? where vet_seq = ?";
 
@@ -943,7 +943,7 @@ public class UserDAO {
       
       try {
          
-         this.conn = DBUtil.open("3.38.234.229", "admin", "java1234");
+         this.conn = DBUtil.open("43.202.26.240", "admin", "java1234");
 
          String sql = "delete tblVetCareer where vet_seq = ?";
 

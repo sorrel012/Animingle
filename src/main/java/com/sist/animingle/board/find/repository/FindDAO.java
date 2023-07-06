@@ -1,7 +1,6 @@
 package com.sist.animingle.board.find.repository;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
@@ -19,7 +18,7 @@ public class FindDAO {
 	private ResultSet rs;
 	
 	public FindDAO() {
-		this.conn = DBUtil.open("3.38.234.229", "admin", "java1234");
+		this.conn = DBUtil.open("43.202.26.240", "admin", "java1234");
 	}
 
 	public int findadd(FindDTO dto) {
@@ -48,7 +47,7 @@ public class FindDAO {
 
 	public List<FindDTO> list(HashMap<String, String> map) {
 		
-		List<FindDTO> list = new ArrayList<FindDTO>(); 
+		List<FindDTO> list = new ArrayList<FindDTO>();
 		
 		try {
 			
@@ -149,7 +148,7 @@ public class FindDAO {
 			
 			rs = pstat.executeQuery();
 			
-			List<FindCDTO> list = new ArrayList<FindCDTO>();  
+			List<FindCDTO> list = new ArrayList<FindCDTO>();
 			
 			while (rs.next()) {
 				
