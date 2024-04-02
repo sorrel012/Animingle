@@ -47,7 +47,7 @@
 ### ✔ 사용 언어
 - JAVA (JDK 11), SQL, HTML, CSS, JavaScript(jQuery), JSP
 ### ✔ 사용 기술
-- JDBC, Ajax, Servlets, Bootstrap
+- JDBC, Ajax, Servlet, Bootstrap
 ### ✔ DB
 - Oracle 11g Enterprise
 ### ✔ IDE
